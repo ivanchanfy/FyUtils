@@ -1,6 +1,14 @@
 ﻿using System;
 namespace FyUtils {
     public class TimeUtils {
+        private const string DefaultFormat = "yyyy-MM-dd HH:mm:ss";
+
+        private static DateTime UnixTime {
+            get {
+                return new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            }
+        }
+
         public static long CurrentTimestamp {
             get {
                 return GetTimestampFromDateTime(DateTime.UtcNow);
@@ -8,11 +16,11 @@ namespace FyUtils {
         }
 
         public static DateTime GetDateTimeFromTimestamp(long timestamp) {
-            return new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(timestamp);
+            return UnixTime.AddSeconds(timestamp);
         }
 
         public static long GetTimestampFromDateTime(DateTime dateTime) {
-            return Convert.ToInt64((dateTime - new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalSeconds);
+            return Convert.ToInt64((dateTime - UnixTime).TotalSeconds);
         }
 
         public static string GetStringFromTimestamp(long timestamp) {
@@ -24,7 +32,7 @@ namespace FyUtils {
         }
 
         public static string GetStringFromDateTime(DateTime dateTime) {
-            return GetStringFromDateTime(dateTime, "yyyy-MM-dd");
+            return GetStringFromDateTime(dateTime, DefaultFormat);
         }
 
         public static string GetStringFromDateTime(DateTime dateTime, string format) {

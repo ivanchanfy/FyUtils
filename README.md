@@ -1,3 +1,3 @@
 # FyUtils
 
-A common library for .NET Core and Xamarin.Android.
+A common library for PCL and Xamarin.Android.

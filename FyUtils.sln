@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FyUtils", "FyUtils\FyUtils.csproj", "{00EC9637-DDCA-4067-A4DA-7F29C2A5698C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FyUtils.Droid", "FyUtils.Droid\FyUtils.Droid.csproj", "{C06BC743-E63B-4C70-BFDD-D3D296742B4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{00EC9637-DDCA-4067-A4DA-7F29C2A5698C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00EC9637-DDCA-4067-A4DA-7F29C2A5698C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00EC9637-DDCA-4067-A4DA-7F29C2A5698C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06BC743-E63B-4C70-BFDD-D3D296742B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06BC743-E63B-4C70-BFDD-D3D296742B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06BC743-E63B-4C70-BFDD-D3D296742B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06BC743-E63B-4C70-BFDD-D3D296742B4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0

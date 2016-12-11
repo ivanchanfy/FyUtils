@@ -44,7 +44,7 @@ namespace FyUtils.Droid {
         /// </summary>
         /// <param name="context">Context.</param>
         public static void Shutdown(Context context) {
-            Intent intent = new Intent(ActionRequestShutdown);
+            var intent = new Intent(ActionRequestShutdown);
             intent.PutExtra(ExtraKeyConfirm, false);
             intent.SetFlags(ActivityFlags.NewTask);
             context.StartActivity(intent);
@@ -55,7 +55,7 @@ namespace FyUtils.Droid {
         /// </summary>
         /// <param name="context">Context.</param>
         public static void Reboot(Context context) {
-            Intent intent = new Intent(Intent.ActionReboot);
+            var intent = new Intent(Intent.ActionReboot);
             intent.PutExtra("nowait", 1);
             intent.PutExtra("interval", 1);
             intent.PutExtra("window", 0);
@@ -68,7 +68,7 @@ namespace FyUtils.Droid {
         /// <param name="context">Context.</param>
         /// <param name="reason">Reason.</param>
         public static void Reboot(Context context, string reason) {
-            PowerManager powerManager = (PowerManager)context.GetSystemService(Context.PowerService);
+            var powerManager = (PowerManager)context.GetSystemService(Context.PowerService);
             try {
                 powerManager.Reboot(reason);
             } catch (Exception e) {

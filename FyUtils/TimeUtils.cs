@@ -23,19 +23,11 @@ namespace FyUtils {
             return Convert.ToInt64((dateTime - UnixTime).TotalSeconds);
         }
 
-        public static string GetStringFromTimestamp(long timestamp) {
-            return GetStringFromDateTime(GetDateTimeFromTimestamp(timestamp));
-        }
-
-        public static string GetStringFromTimestamp(long timestamp, string format) {
+        public static string GetStringFromTimestamp(long timestamp, string format = DefaultFormat) {
             return GetStringFromDateTime(GetDateTimeFromTimestamp(timestamp), format);
         }
 
-        public static string GetStringFromDateTime(DateTime dateTime) {
-            return GetStringFromDateTime(dateTime, DefaultFormat);
-        }
-
-        public static string GetStringFromDateTime(DateTime dateTime, string format) {
+        public static string GetStringFromDateTime(DateTime dateTime, string format = DefaultFormat) {
             return dateTime.ToString(format);
         }
 

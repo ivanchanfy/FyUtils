@@ -14,7 +14,7 @@ namespace FyUtils.Droid {
         }
 
         public static void ShowToast(Context context, View view, ToastLength duration = ToastLength.Short) {
-            Toast toast = new Toast(context);
+            var toast = new Toast(context);
             toast.View = view;
             toast.Duration = duration;
             toast.Show();

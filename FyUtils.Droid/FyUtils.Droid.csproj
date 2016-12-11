@@ -46,6 +46,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DeviceUtils.cs" />
     <Compile Include="ToastUtils.cs" />
+    <Compile Include="ImageUtils.cs" />
+    <Compile Include="UnitUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

@@ -8,9 +8,15 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="FyUtils Status">
     <Files>
       <File FileName="FyUtils\TimeUtils.cs" Line="55" Column="10" />
-      <File FileName="FyUtils\RegexUtils.cs" Line="32" Column="2" />
+      <File FileName="FyUtils\RegexUtils.cs" Line="13" Column="10" />
       <File FileName="FyUtils\Properties\AssemblyInfo.cs" Line="26" Column="34" />
-      <File FileName="FyUtils\CryptUtils.cs" Line="34" Column="6" />
+      <File FileName="FyUtils\CryptUtils.cs" Line="18" Column="10" />
+      <File FileName="FyUtils\packages.config" Line="5" Column="12" />
+      <File FileName="FyUtils.Droid\DeviceUtils.cs" Line="27" Column="10" />
+      <File FileName="FyUtils.Droid\ToastUtils.cs" Line="20" Column="26" />
+      <File FileName="FyUtils.Droid\Resources\values\Strings.xml" Line="1" Column="1" />
+      <File FileName="FyUtils.Droid\ImageUtils.cs" Line="21" Column="9" />
+      <File FileName="FyUtils.Droid\UnitUtils.cs" Line="15" Column="10" />
       <File FileName="FyUtils Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
